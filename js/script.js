@@ -90,11 +90,10 @@ $("#cas").html("Time:<br/>" + izpisTimer);
       }
     }
   }
-//????????!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
   function init_paddle() {
     paddlex = WIDTH / 2;
     paddleh = 7;
-    paddlew = 1400;
+    paddlew = 100;
   }
 
   function init() {
@@ -108,8 +107,7 @@ $("#cas").html("Time:<br/>" + izpisTimer);
     ctx = $("#canvas")[0].getContext("2d");
     WIDTH = $("#canvas").width();
     HEIGHT = $("#canvas").height();
-	///////!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    return setInterval(draw, 30);
+    return setInterval(draw, 7);
   }
 
   function circle(x, y, r) {
